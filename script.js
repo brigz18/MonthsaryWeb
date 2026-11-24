@@ -33,9 +33,9 @@ const PHOTOS = [];
 let cols = 0, rt;
 const probe = n => new Promise(r => {
   const i = new Image();
-  i.onload = () => r({ n, src: `images/photo${n}.jpg`, w: i.naturalWidth, h: i.naturalHeight });
+  i.onload = () => r({ n, src: `photo${n}.jpg`, w: i.naturalWidth, h: i.naturalHeight });
   i.onerror = () => r(null);
-  i.src = `images/photo${n}.jpg`;
+  i.src = `photo${n}.jpg`;
 });
 Promise.all(Array.from({ length: MAX_PHOTO }, (_, k) => probe(k + 1))).then(rs => {
   PHOTOS.push(...rs.filter(Boolean));
