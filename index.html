@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Our Little Love Story ❤️</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/extras.css">
+</head>
+
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <nav><button id="musicBtn" type="button"></button></nav>
+  <!-- MUSIC: put your song in the "music" folder and name it our-song.mp3 (or change the file name in src below). It only plays after she taps the Music button. -->
+  <audio id="song" src="our-song" preload="none" loop></audio>
+
+  <!-- WELCOME -->
+  <section id="welcome">
+    <p class="eyebrow">3rd Monthsary · November 25, 2026</p>
+    <h1>I Love You So Much Baby ❤️</h1>
+    <p class="sub">Three months of memories, love, and choosing each other.</p>
+    <div id="env" class="env">
+      <div class="note">For Baby ❤️</div>
+      <div class="pocket"></div>
+      <div class="flap"></div>
+    </div>
+    <button id="openBtn" class="btn" type="button">Open Your Surprise 💌</button>
+    <div id="welcomeMsg" hidden>
+      <h2 class="hand">Hi, Baby! 💕</h2>
+      <p>I made this little corner of the internet just for you. Tap the button to read your letter, then scroll down to
+        relive our memories.</p>
+      <button id="readBtn" class="btn" type="button">Read Your Letter ↓</button>
+    </div>
+  </section>
+
+  <!-- LOVE LETTER (stays hidden until "Read Your Letter" is pressed) -->
+  <div id="rest" hidden>
+    <section id="letter">
+      <h2>A Letter For You</h2>
+      <article class="paper hand">
+        <p>Dear Baby,</p>
+        <p>Happy 3rd monthsary, baby! Three months na tayo, and I'm really thankful na dumating ka sa buhay ko. Hindi
+          man perfect ang relationship natin, I'm still happy that I get to experience these moments with you. Thank you
+          for being part of my life. I hope we continue to understand each other, grow together, and create more
+          memories. I love you, baby. ❤️</p>
+        <p class="sig">— Roi</p>
+      </article>
+    </section>
+
+    <!-- PHOTOS (built automatically by js/script.js from images/photoN.jpg) -->
+    <section id="memories">
+      <div id="groups"></div>
+    </section>
+
+    <!-- REASONS -->
+    <section id="reasons" class="rv">
+      <h2>Reasons Why I Love You</h2>
+      <button id="moreBtn" class="btn" type="button">One More Reason ❤️</button>
+      <div id="reasonList" class="rlist"></div>
+    </section>
+
+    <!-- FINAL MESSAGE -->
+    <section id="final" class="rv">
+      <div class="bigheart">❤️</div>
+      <h2>Three months down, and I still want more memories with you.</h2>
+      <p class="hand big">Happy 3rd Monthsary, Baby! Here's to more months and years together. I love you! ❤️</p>
+      <button id="replayBtn" class="btn" type="button">Replay Surprise 💌</button>
+    </section>
+
+  </div><!-- end of #rest: everything inside stays hidden until "Read Your Letter" is pressed -->
+
+  <!-- LIGHTBOX -->
+  <div id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="x" id="lbX" aria-label="Close">✕</button>
+    <button class="p" id="lbP" aria-label="Previous photo">‹</button>
+    <figure><img id="lbImg" alt="">
+      <figcaption><span id="lbCap"></span><small id="lbCnt"></small></figcaption>
+    </figure>
+    <button class="n" id="lbN" aria-label="Next photo">›</button>
+  </div>
+  <button id="top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+  <script src="js/extras.js"></script>
+</body>
+
+</html>

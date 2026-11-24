@@ -1,0 +1,13 @@
+{
+  "app": "our-love-story",
+  "version": 1,
+  "_note": "Example backup format. Use Memories > Import JSON to load a file like this. Placeholders only; replace with your real memories.",
+  "data": {
+    "s": {"nick": "Baby"},
+    "albums": ["Our Favorite Photos", "Special Days", "Everyday Moments"],
+    "mem": [{"id": "ex1", "title": "Example memory", "date": "2024-01-01", "desc": "Replace me.", "story": "", "album": "Special Days", "tags": ["example"], "loc": "", "photos": ["assets/images/example.jpg"], "fav": false}],
+    "letters": [{"id": "l1", "title": "To My Baby", "date": "", "body": "Write your own words here.", "fav": true}],
+    "dates": [{"id": "d1", "title": "Our anniversary", "date": "2024-01-01", "rec": "yearly", "desc": "", "photo": "", "note": ""}],
+    "songs": []
+  }
+}
